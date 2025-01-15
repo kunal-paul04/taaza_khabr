@@ -27,10 +27,10 @@
       <!-- END header -->
       <!-- BEGIN content -->
       <div id="content">
-        {% for news in top_news %}
+        {% for news in state_news %}
         <!-- begin post -->
         <div class="post">
-          <p class="details1">March 15, 2009 / <a href="#">Top News</a></p>
+          <p class="details1">March 15, 2009 / <a href="#">{{state_name}}</a></p>
           <div class="buffer">
             <div class="content">
               <h2><a href="#">{{news.title}}</a></h2>
