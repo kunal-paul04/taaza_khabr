@@ -15,7 +15,7 @@ To run this project, ensure you have the following installed:
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/taza-khabr.git
+   git clone https://github.com/kunal-paul04/taaza_khabr.git
    cd taaza_khabr
    ```
 
