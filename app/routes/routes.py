@@ -28,7 +28,7 @@ async def read_item(request: Request):
     ) 
 
 
-def get_top_news(max_results=6):
+def get_top_news(max_results=15):
     """Fetches top news"""
     gn = GoogleNews(lang='en', country='IN')  # Ensure news is localized to India
     top_news = gn.top_news()  # Fetch top news
@@ -45,7 +45,7 @@ def get_top_news(max_results=6):
     return news_list
 
 
-def get_state_news(state_name, max_results=6):
+def get_state_news(state_name, max_results=15):
     """Fetches top news for a specific state."""
     gn = GoogleNews(lang='en', country='IN')  # Ensure news is localized to India
     search = gn.search(state_name, when='0d')  # Search for news in the last day
